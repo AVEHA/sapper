@@ -13,26 +13,26 @@ namespace sapper
         {
             Console.Write("Введите высоту поля: ");
             int height = Convert.ToInt32(Console.ReadLine());
-            if (height <= 0)
+            while (height <= 0)
             {
                 Console.Write("Значение высоты должно быть больше нуля.\nВведите высоту поля: ");
                 height = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("Введите ширину поля: ");
             int width = Convert.ToInt32(Console.ReadLine());  
-            if (width <= 0)
+            while (width <= 0)
             {
                 Console.Write("Значение ширины должно быть больше нуля.\nВведите ширину поля: ");
                 width = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("Введите количество мин: ");
             int mines = Convert.ToInt32(Console.ReadLine());
-            if (mines > height * width)
+            while (mines > height * width)
             {
                 Console.Write("Количество мин не может быть больше количества элементов поля.\nВведите количество мин: ");
                 mines = Convert.ToInt32(Console.ReadLine());
             }
-            if (mines == height * width)
+            while (mines == height * width)
             {
                 Console.Write("Мины не могут занимать всё поле.\nВведите количество мин: ");
                 mines = Convert.ToInt32(Console.ReadLine());
