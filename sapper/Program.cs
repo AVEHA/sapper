@@ -19,7 +19,7 @@ namespace sapper
                 height = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("Введите ширину поля: ");
-            int width = Convert.ToInt32(Console.ReadLine());
+            int width = Convert.ToInt32(Console.ReadLine());  
             if (width <= 0)
             {
                 Console.Write("Значение ширины должно быть больше нуля.\nВведите ширину поля: ");
